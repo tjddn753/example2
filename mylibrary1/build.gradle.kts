@@ -3,7 +3,20 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
 }
-publishing {
+afterEvaluate {
+    publishing {
+        publications {
+// Creates a Maven publication called "release".
+            register<MavenPublication>("release") {
+                groupId = "com.github.tjddn753"
+                artifactId = "mylibrary1"
+                version = "1.0.5"
+
+            }
+        }
+    }
+}
+/*publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.tjddn753"
@@ -15,7 +28,7 @@ publishing {
             }
         }
     }
-}
+}*/
 android {
     namespace = "com.example.mylibrary1"
     compileSdk = 34
