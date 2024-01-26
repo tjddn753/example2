@@ -9,8 +9,8 @@ afterEvaluate {
 // Creates a Maven publication called "release".
             register<MavenPublication>("release") {
                 groupId = "com.github.tjddn753"
-                artifactId = "mylibrary1"
-                version = "1.0.6"
+                artifactId = "com.example.mylibrary1"
+                version = "1.0.7"
 
             }
         }
