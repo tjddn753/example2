@@ -10,7 +10,7 @@ afterEvaluate {
             register<MavenPublication>("release") {
                 groupId = "com.github.tjddn753"
                 artifactId = "mylibrary1"
-                version = "1.0.5"
+                version = "1.0.6"
 
             }
         }
