@@ -7,7 +7,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.tjddn753"
-            artifactId = "my-library"
+            artifactId = "mylibrary1"
             version = "1.0.2"
 
             afterEvaluate {
